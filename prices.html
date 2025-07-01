@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JaguarCRM - Gestión de Clientes Inteligente</title>
+    <title>JaguarCRM - Precios</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <!-- estilos logo mini -->
-    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="prices.css">
+     <!-- estilos logo mini -->
+    <link rel="icon" href="https://raw.githubusercontent.com/H3RBASS/JaguarCRM/refs/heads/main/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://github.com/H3RBASS/JaguarCRM/blob/main/favicon/apple-touch-icon.png?raw=true">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="nav-container">
-            <img src="images/Diseño sin título.png" alt="JaguarCRM" class="logo">
+            <a href="index.html"><img src="https://github.com/H3RBASS/JaguarCRM/blob/main/favicon/web-app-manifest-192x192.png?raw=true" alt="JaguarCRM" class="logo"></a>
             
             <div class="menu-toggle" id="mobile-menu">
                 <span></span>
@@ -25,22 +26,197 @@
             </div>
             
             <nav class="nav-menu" id="nav-menu">
-                <!-- <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
-                    <i class="fas fa-moon"></i>
-                </button> -->
                 <div class="dropdown nav-item" id="features-dropdown">
                     <a href="#" class="nav-link">Aplicaciones</a>
                     <div class="dropdown-content">
-                        <a href="#">Nexo MK</a>
+                        <a href="https://jaguarcrm360.com" target="_blank">Nexo MK</a>
                         <a href="#">JaguarCRM360</a>
                     </div>
                 </div>
-                <a href="prices.html" class="nav-link" target="_blank">Precios</a>
-                <a href="#" class="nav-link">Contacto</a>
-                <a href="#" class="btn btn-secondary btn-mobile-hidden">Prueba Gratis</a>
+                <!-- <a href="prices.html" class="nav-link" target="_blank">Precios</a> -->
+                <a href="https://api.whatsapp.com/send/?phone=59178202929&text=Hola%2C+me+interesa+NexoMk&type=phone_number&app_absent=0" class="nav-link" target="_blank">Contacto</a>
+                <a href="https://app.jaguarcrm360.com/signup" class="btn btn-test btn-mobile-hidden">Prueba Gratis</a>
             </nav>
         </div>
     </header>
-    
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="pricing-container">
+            <div class="section-title">
+                <h2>Planes a medida para tu negocio</h2>
+                <p>Elige el plan que mejor se adapte a tus necesidades y escala con nosotros</p>
+            </div>
+            
+            <!-- Pricing Toggle -->
+            <div class="pricing-toggle">
+                <span>Mensual</span>
+                <label class="switch">
+                    <input type="checkbox" id="pricingToggle">
+                    <span class="slider round"></span>
+                </label>
+                <span>Anual <span class="discount-badge">20% de descuento</span></span>
+            </div>
+            
+            <!-- Pricing Cards -->
+            <div class="pricing-grid">
+                <!-- Plan Básico -->
+                <div class="pricing-card fade-in">
+                    <div class="pricing-header">
+                        <h3>Básico</h3>
+                        <p>Perfecto para pequeñas empresas y emprendedores</p>
+                    </div>
+                    
+                    <div class="pricing-price monthly-price">
+                        <span class="price">$41</span>
+                        <span class="period">/mes</span>
+                        <span class="billed">Facturado anualmente ($492)</span>
+                    </div>
+                    
+                    <div class="pricing-price annual-price hidden">
+                        <span class="price">$37</span>
+                        <span class="period">/mes</span>
+                        <span class="billed">Facturado anualmente ($447)</span>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Hasta 3 usuarios</li>
+                        <li><i class="fas fa-check"></i> Gestión de clientes</li>
+                        <li><i class="fas fa-check"></i> 1 Conexiónes</li>
+                        <li><i class="fas fa-check"></i> Reportes básicos</li>
+                        <li><i class="fas fa-check"></i> Soporte por correo</li>
+                    </ul>
+                    
+                    <a href="https://api.whatsapp.com/send/?phone=59178202929&text=Hola%2C+me+interesa+el+plan+mensual%2C+quisiera+contratar+una+membres%C3%ADa&type=phone_number&app_absent=0" class="btn btn-primary" target="_blank">Empezar ahora</a>
+                </div>
+                
+                <!-- Plan Premium -->
+                <div class="pricing-card featured fade-in" style="animation-delay: 0.2s;">
+                    <div class="popular-badge">Más popular</div>
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <p>Ideal para empresas en crecimiento</p>
+                    </div>
+                    
+                    <div class="pricing-price monthly-price">
+                        <span class="price">$97</span>
+                        <span class="period">/mes</span>
+                        <span class="billed">Facturado anualmente ($1164)</span>
+                    </div>
+                    
+                    <div class="pricing-price annual-price hidden">
+                        <span class="price">$86</span>
+                        <span class="period">/mes</span>
+                        <span class="billed">Facturado anualmente ($1032)</span>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Hasta 8 usuarios</li>
+                        <li><i class="fas fa-check"></i> Gestión de clientes avanzada</li>
+                        <li><i class="fas fa-check"></i> Automatizaciones ilimitadas</li>
+                        <li><i class="fas fa-check"></i> Reportes avanzados</li>
+                        <!-- <li><i class="fas fa-check"></i> Integraciones con API</li> -->
+                        <li><i class="fas fa-check"></i> Soporte prioritario 24/7</li>
+                        <li><i class="fas fa-check"></i> Entrenamiento personalizado</li>
+                    </ul>
+                    
+                    <a href="https://api.whatsapp.com/send/?phone=59178202929&text=Hola%2C+me+interesa+el+plan+mensual%2C+quisiera+contratar+una+membres%C3%ADa&type=phone_number&app_absent=0" class="btn btn-secondary" target="_blank">Empezar ahora</a>
+                </div>
+            </div>
+            
+            <div class="enterprise-cta">
+                <p>¿Necesitas un plan personalizado para tu empresa?</p>
+                <a href="https://api.whatsapp.com/send/?phone=59178202929&text=Hola%2C+me+interesa+NexoMk&type=phone_number&app_absent=0" class="btn btn-white" target="_blank">Contáctanos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="faq-container">
+            <div class="section-title">
+                <h2>Preguntas frecuentes</h2>
+                <p>Resuelve tus dudas sobre nuestros planes y servicios</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">¿Puedo cambiar de plan más adelante?<i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Sí, puedes cambiar entre planes en cualquier momento. <br> Si cambias a un plan superior, se aplicará un descuento por la diferencia. Si cambias a un plan inferior, el cambio se aplicará en tu próximo ciclo de facturación.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">¿Hay un período de prueba?<i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Si, ofrecemos un plan de prueba de 10 dias para que pueda probar la aplicacion sin ningun pago o membresia.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">¿Qué métodos de pago aceptan?<i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Aceptamos transferencias bancarias, Pago QR y PayPal.</p>
+                    </div>
+                </div>
+                
+                <!-- <div class="faq-item">
+                    <button class="faq-question">¿Ofrecen descuentos para organizaciones sin fines de lucro?<i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Sí, ofrecemos un 30% de descuento para organizaciones sin fines de lucro verificadas. Contáctanos para más información.</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="copyright">
+                <p>&copy; 2025 JaguarCRM. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Toggle de precios
+        const pricingToggle = document.getElementById('pricingToggle');
+        const monthlyPrices = document.querySelectorAll('.monthly-price');
+        const annualPrices = document.querySelectorAll('.annual-price');
+        
+        pricingToggle.addEventListener('change', function() {
+            if(this.checked) {
+                monthlyPrices.forEach(el => el.classList.add('hidden'));
+                annualPrices.forEach(el => el.classList.remove('hidden'));
+            } else {
+                monthlyPrices.forEach(el => el.classList.remove('hidden'));
+                annualPrices.forEach(el => el.classList.add('hidden'));
+            }
+        });
+        
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                question.classList.toggle('active');
+                answer.classList.toggle('active');
+                
+                if(question.classList.contains('active')) {
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
