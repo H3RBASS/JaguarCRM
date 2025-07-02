@@ -821,6 +821,7 @@ input:checked + .slider:before {
         padding: 1rem;
         width: 100%;
         text-align: left;
+        color: (var(--darker));
     }
     
     .dropdown-content {
